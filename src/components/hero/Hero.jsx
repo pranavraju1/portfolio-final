@@ -50,7 +50,12 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>PRANAV RAJU</motion.h2>
           <motion.h1 variants={textVariants}>Frontend Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants} onClick={()=>console.log("hello")}>Resume</motion.button>
+            <motion.button
+              variants={textVariants}
+              onClick={() => window.open("https://drive.google.com/file/d/1TQuv5O7E5GnGT01rzbTmyt4Ld1kiADbx/view?usp=sharing")}
+            >
+              Resume
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}
