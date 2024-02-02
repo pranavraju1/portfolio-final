@@ -47,9 +47,14 @@
       input,textarea{
         padding: 20px;
         background-color: transparent;
+        border: none;
         border: 1px solid white;
-        color: white;
+        color: orange;
         border-radius: 5px;
+        &:focus{
+          outline: none;
+          border: 3px solid orange !important;
+        }
         @include mobile{
           padding: 10px;
         }

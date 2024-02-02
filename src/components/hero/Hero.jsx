@@ -60,7 +60,7 @@ const Hero = () => {
           />
         </motion.div>
         <motion.div className="imageContainer">
-          <motion.img src="/hero1.png" alt="" />
+          <motion.img src="/hero1-compressed.png" alt="" />
         </motion.div>
       </div>
       <motion.div
@@ -69,7 +69,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        HTML CSS JavaScript React
+        HTML CSS JavaScript React Sass
       </motion.div>
     </div>
   );
