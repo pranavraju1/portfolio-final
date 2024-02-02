@@ -1,0 +1,104 @@
+@import "../../app.scss";
+.hero{
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #140616, #4C035E );
+  overflow: hidden;
+  position: relative;
+
+  .wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    .textContainer{
+      // outline: 2px solid red;
+      height: 100%;
+      // width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      @include mobile{
+        height: 50%;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2{
+        font-size: 30px;
+        color: #E09AE3;
+        letter-spacing: 10px;
+      }
+      h1{
+        font-size: 88px;
+        @include mobile{
+          font-size: 36px;
+        }
+      }
+      .buttons{
+        z-index: 999 !important;
+        button{
+          padding: 20px;
+          border: 3px solid #F4DDF6;
+          border-radius: 10px;
+          background-color: transparent;
+          color: #F4DDF6;
+          margin-right: 20px;
+          cursor: pointer !important;
+          font-weight: bold;
+          &:hover{
+            // background-color: #F4DDF6;
+            background-color: orange;
+
+            color: #140616;
+            border: none;
+          }
+        }
+      }
+      .mouse{
+        width: 50px;
+      }
+    }
+  }
+
+
+
+  .imageContainer{
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    
+    @include mobile{
+      height: 50%;
+      width: 77%;
+      top: unset;
+      // outline: 2px solid white;
+      left: 10%;
+    }
+
+    img{
+      height: 32rem;
+      scale: 1.2;
+      @include mobile{
+        height: 160%;
+        width: 100%;
+        object-fit: contain;
+        scale: 0.9;
+      }
+    }
+  }
+
+  .slidingTextContainer{
+    z-index: 1;
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #e19ae31b;
+    width: 50%;
+    font-weight: bold;
+  }
+
+}

@@ -1,0 +1,48 @@
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+:root{
+  --theme:#140616;
+  --text:#F4DDF6;
+  --primary:#E09AE3;
+  --second:#8a2a26;
+  --third:#cc7743;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans','sans-serif';
+}
+body{
+  background-color: var(--theme);
+  color: var(--text);
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+
+}
+
+@mixin mobile {
+  @media (max-width:738px){
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width:1024px){
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width:1366px){
+    @content;
+  }
+}
+

@@ -1,0 +1,143 @@
+@import "../../app.scss";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  height: 100%;
+  h1{
+    color: orange;
+    font-size:75px;
+    @include mobile{
+      font-size: 40px;
+      text-align: center;
+      margin-top: 5px;
+    }
+  }
+  .bar{
+    height: 10px;
+    background-color: white;
+    width: 80%;
+    @include mobile{
+      height: 3px;
+    }
+  }
+  .content{
+    // outline: 2px solid red;
+    height: 75%;
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    @include mobile{
+      margin-top: 0px;
+    }
+    .text{
+      display: flex;
+      flex-direction: row;
+      @include mobile{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: 80%;
+      }
+      height: 65%;
+      .about{
+        width: 70%;
+        font-size: 20px;
+        @include mobile{
+          font-size: 15px;
+          width: 100%;
+        }
+        h2{
+          margin-top: 20px;
+          margin-bottom: 20px;
+          @include mobile{
+            font-size: 15px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+          }
+        }
+        h1{
+          @include mobile{
+            font-size: 30px;
+          }
+        }
+      }
+      .pic{
+        margin-left: 20px;
+        width: 30%;
+        @include mobile{
+          width: 70%;
+          margin-left: 0;
+        }
+        img{
+          width: 100%;
+          border-radius: 10%;
+          @include mobile{
+            height: 100%;
+            width: 100%;
+            border-radius: 10%;
+          }
+        }
+      }
+    }
+    .stack{
+      // padding-top: 20px ;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      @include mobile{
+        height: 100%;
+        margin-top: 20px;
+        // outline: 2px solid aquamarine;
+      }
+      h3{
+        @include mobile{
+          font-size: 20px !important;
+        }
+      }
+      .tech,.platform{
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        height: 50%;
+        width: 100%;
+        @include mobile{
+          gap: 10px;
+          height: 100%;
+          flex-wrap: wrap;
+        }
+        .item{
+          background-color: pink;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          @include mobile{
+            height: 50px;
+            width: 50px;
+          }
+          .icon{
+            width: 70px;
+            height: 45px;
+            color: black;
+            @include mobile{
+              width: 80%;
+              height: 100%;
+              // outline: 2px solid red;
+            }
+          }
+        }
+      }
+      .platform{
+        margin-top: 10px;
+        @include mobile{
+          margin-top: 0px;
+        }
+      }  
+    }
+  }
+}
