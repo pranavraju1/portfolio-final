@@ -36,43 +36,43 @@ const About = () => {
         <div className="stack">
           <h3 style={{ color: "orange", fontSize: "30px" }}>Tech Stack : </h3>
           <div className="tech">
-            <div className="item">
+            <div title="HTML" className="item">
               <PiFileHtmlBold className="icon" />
             </div>
-            <div className="item">
+            <div title="CSS" className="item">
               <PiFileCssBold className="icon" />
             </div>
-            <div className="item">
+            <div title="JavaScript" className="item">
               <RiJavascriptLine className="icon" />
             </div>
-            <div className="item">
+            <div title="React" className="item">
               <FaReact className="icon" />
             </div>
-            <div className="item">
+            <div title="Sass" className="item">
               <FaSass className="icon" />
             </div>
-            <div className="item">
+            <div title="Bootstrap" className="item">
               <FaBootstrap className="icon" />
             </div>
-            <div className="item">
+            <div title="Java" className="item">
               <FaJava className="icon" />
             </div>
-            <div className="item">
+            <div title="C++" className="item">
               <SiCplusplus className="icon" />
             </div>
           </div>
           <h3 style={{ color: "orange", fontSize: "30px" }}>Platform : </h3>
           <div className="platform">
-            <div className="item">
+            <div title="VS Code" className="item">
               <TbBrandVscode className="icon" />
             </div>
-            <div className="item">
+            <div title="Github" className="item">
               <FaGithub className="icon" />
             </div>
-            <div className="item">
+            <div title="Postman" className="item">
               <SiPostman className="icon" />
             </div>
-            <div className="item">
+            <div title="Firebase" className="item">
               <IoLogoFirebase className="icon" />
             </div>
           </div>
