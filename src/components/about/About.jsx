@@ -14,7 +14,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 const About = () => {
   return (
     <div className="container">
-      <h1>About</h1>
+      <h1>About Me</h1>
       <div className="bar"></div>
       <div className="content">
         <div className="text">
