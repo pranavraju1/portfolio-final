@@ -49,7 +49,7 @@ const Navbar = () => {
               cursor: "pointer",
             }}
             onClick={() =>
-              window.open("https://github.com/pranavraju1/type-test", "_blank")
+              window.open("https://github.com/pranavraju1", "_blank")
             }
           />
           <FaLinkedin
