@@ -11,6 +11,8 @@ import { TbBrandVscode } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
+import { FaNode } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
 const About = () => {
   return (
     <div className="container">
@@ -48,6 +50,9 @@ const About = () => {
             <div title="React" className="item">
               <FaReact className="icon" />
             </div>
+            <div title="NodeJs" className="item">
+              <FaNode className="icon" />
+            </div>
             <div title="Sass" className="item">
               <FaSass className="icon" />
             </div>
@@ -74,6 +79,9 @@ const About = () => {
             </div>
             <div title="Firebase" className="item">
               <IoLogoFirebase className="icon" />
+            </div>
+            <div title="MongoDB" className="item">
+              <SiMongodb className="icon" />
             </div>
           </div>
         </div>
