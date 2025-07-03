@@ -52,7 +52,7 @@ const Hero = () => {
           <motion.div variants={textVariants} className="buttons">
             <motion.button
               variants={textVariants}
-              onClick={() => window.open("https://drive.google.com/file/d/1y_N4Au3CB7YxJMNvDR4BqZEy-cDi5WGC/view?usp=sharing")}
+              onClick={() => window.open("https://drive.google.com/file/d/1_gypRpgmfLAGFb5D4n43lJSCKx8jHXE7/view?usp=sharing")}
             >
               Resume
             </motion.button>
